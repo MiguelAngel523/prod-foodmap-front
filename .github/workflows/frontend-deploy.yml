@@ -72,6 +72,6 @@ jobs:
       - name: Force ECS deployment
         run: |
           aws ecs update-service \
-            --cluster my-cluster \
-            --service frontend-service \
+            --cluster grup4-cluster \
+            --service frontend \
             --force-new-deployment
